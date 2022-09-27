@@ -1,20 +1,21 @@
-largeCSV2mySQL
+CSV2MySQL
 ==============
 
-a php script to import very large csv file to Mysql database in one minute
+Forked from [sanathp/largeCSV2mySQL](https://github.com/sanathp/largeCSV2mySQL).
 
-This script uploads a csv with 2 Million rows in 60 seconds.
+A PHP script to import very large CSV file to MySQL database.
 
+This script uploads a CSV up to 2 Million rows in 60 seconds.
 
-Instructions :
-
-1. Keep this php file and Your csv file in one folder 
-2. Create a table in your mysql database to which you want to import 
-3. Open the php file from you you localhost server 
-4. Enter all the fields 
-5. click on upload button 
+<h3> Instructions </h3>
+<ol>
+    <li>Create a table in your Mysql database to which you want to import</li>
+    <li>Grant the right permissions to the user who is going to connect</li>
+    <li>Open the PHP file from your localhost server</li>
+    <li>Enter all the fields</li>
+    <li>Click on upload button</li>
+</ol>
 
 The fastest way to import a CSV file is to use Mysql LOAD DATA command.
 
-For More info check my blog post http://medium.com/@sanathkumar/e6d639b790ab
-
+PS: server configuration might be reviewed (authorize file upload, file size, enable mysqli extension, enable 'LOAD DATA' query, ...).
